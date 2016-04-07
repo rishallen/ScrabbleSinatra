@@ -2,26 +2,32 @@
 
 <html>
   <head>
-    <title>Scrabble Page</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css">
-      <h1>SCRABBLE</h1>
-    <section class="undertitle"><p><em>Ada Developers Academy</em></p></section>
+    <link rel="stylesheet" type="text/css" href="stylesheets/scrabble.css">
+    <title>MY SCRABBLE</title>
   </head>
+
+  <body>
+    <header>
+      <h1>
+        MY SCRABBLE
+        <span class="undertitle"><p><em>Ada Developers Academy</p></em></span>
+      </h1>
       <nav>
-        <ul>
-          <li class="primary_nav"><a href="/">HOME</a></li>
-          <li class="primary_nav"><a href="/score">SCORE</a></li>
-        </ul>
+        <a href="/">HOME</a>
+        <a href="/score">SCORE</a>
+        <a href="/score_many">SCORE MANY WORDS</a>
       </nav>
-<body>
-  <main>
-    <%=yield %>
-  </main>
-<footer>
-  <section class="footer">
-    <p>copyright 2016 Risha A. Allen</p>
-  </section>
-</footer>
-</body>
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        &copy;2016 Risha A. Allen
+      </div>
+    </footer>
+  </body>
 </html>

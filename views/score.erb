@@ -1,6 +1,6 @@
 <% if @wordscore %>
 <h1>
-  The Word: <%= @word %> is a score of <%= @wordscore %>
+  The Word: <%= @word %> : has a score of <%= @wordscore %>
 <h1>
   <% end %>
 
@@ -12,14 +12,7 @@
 <form action="" method="post" accept-charset="utf-8">
 
   <label for="user_sees_this_box">WORD:</label>
-  <input type="text" name="word" value="" id="user_sees_this_box">
+  <input type="textarea" name="word" value="" id="user_sees_this_box">
 
   <input type="submit" value="Submit">
 </form>
-
-
-Score page:
-Accessible from /score
-Includes a form that contains one text input
-On form submission, your app will POST the user input
-Once user input is retrieved, your app will score the input and then display the calculated score in the rendered view

@@ -1,0 +1,22 @@
+<% if @collection_of_words %>
+  <!-- <%= @words %>:  <%= @collection_of_words %> -->
+
+  <section class="collection">
+    <% @collection_of_words.each do |word, score|%>
+    <div><%= word %></div> <div><%=score %>
+  <% end %>
+  </section>
+<% end %>
+
+
+
+
+<div class="params">
+  <%= params %>
+</div>
+
+<form action="" method="post" accept-charset="utf-8">
+  <label for="user_sees_this_box">WORDS:</label>
+  <input type="text" name="words" value="" id="user_sees_this_box">
+  <input type="submit" value="Submit">
+</form>

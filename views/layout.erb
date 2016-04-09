@@ -9,14 +9,16 @@
 
   <body>
     <header>
-      <h1>
+      <h1 class="headerh1">
         MY SCRABBLE
-        <span class="undertitle"><p><em>Ada Developers Academy</p></em></span>
       </h1>
+      <span class="adasignature"><p><em>Ada Developers Academy</p></em></span>
       <nav>
-        <a href="/">HOME</a>
-        <a href="/score">SCORE</a>
-        <a href="/score_many">SCORE MANY WORDS</a>
+        <ul class="datacontentfield">
+          <li class="indexcollection"><a href="/">HOME</a></li>
+          <li class="wordscorecollection"><a href="/score">SCORE</a></li>
+          <li class="wordsscorecollection"><a href="/score_many">SCORE MANY WORDS</a></li>
+        </ul>
       </nav>
     </header>
 
@@ -24,10 +26,10 @@
       <%= yield %>
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="copyright">
         &copy;2016 Risha A. Allen
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>

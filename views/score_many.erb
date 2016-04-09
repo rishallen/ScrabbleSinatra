@@ -11,12 +11,18 @@
 
 
 
-<div class="params">
+<!-- <div class="params">
   <%= params %>
-</div>
+</div> -->
 
 <form action="" method="post" accept-charset="utf-8">
-  <label for="user_sees_this_box">WORDS:</label>
-  <input type="text" name="words" value="" id="user_sees_this_box">
+  <label for="scrabble_word">WORDS:</label>
+  <input
+    type="text"
+    placeholder="place words"
+    pattern="[A-Za-z]{1,7}{1,100}"
+    name="words"
+    value=""
+    id="scrabble_word">
   <input type="submit" value="Submit">
 </form>
